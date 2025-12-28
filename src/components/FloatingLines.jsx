@@ -480,7 +480,7 @@ export default function FloatingLines({
 
   return (
     <div
-      className={`flex flex-col items-center justify-center w-full h-full relative overflow-hidden floating-lines-container ${className ?? ''}`}
+      className={`w-full h-full relative overflow-hidden floating-lines-container ${className ?? ''}`}
     >
       <div
         ref={containerRef}

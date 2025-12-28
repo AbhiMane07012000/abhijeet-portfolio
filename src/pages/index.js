@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div
-      className={`${poppins.className} ${poppins.className} flex items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
+      className={`${poppins.className}`}
     >
      <Hero />
     </div> 
