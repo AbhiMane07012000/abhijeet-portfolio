@@ -7,7 +7,8 @@ export default function Layout({ children }) {
   const logoPath = "./logo.png";
 
   return (
-    <header className="flex items-center justify-center">
+    <>
+    <header className="flex justify-center items-center">
       <PillNav
         logo={logoPath}
         logoAlt="Logo"
@@ -26,8 +27,9 @@ export default function Layout({ children }) {
         hoveredPillTextColor="#ffffff"
         pillTextColor="#000000"
       />
+      </header>
 
       <main>{children}</main>
-    </header>
+    </>
   );
 }
