@@ -1,31 +1,29 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import Head from "next/head";
 import { Poppins } from "next/font/google";
+
 import Hero from "@/components/Hero";
 import Contact from "@/components/Contact";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Skill from "@/components/Skill";
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
 
 
   return (
+    <>
+    <Head>
+      <title>Abhijeet Mane</title>
+      <meta name="description" content="Full Stack Developer" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/logo.png" />
+    </Head>
     <div
       className={`${poppins.className}`}
     >
@@ -35,5 +33,7 @@ export default function Home() {
      <Projects />
      <Contact />
     </div> 
+    </>
+    
   );
 }
