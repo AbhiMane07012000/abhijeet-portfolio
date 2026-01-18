@@ -11,7 +11,7 @@ import  Link  from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="lg:h-[20vh] relative flex flex-col justify-center items-center my-5 border-t-[1px] border-slate-300  ">
+      <footer className="lg:h-[20vh] relative flex flex-col justify-center items-center border-t-[1px] border-slate-300  ">
         {/* <Link
           to="home"
           smooth={true}
